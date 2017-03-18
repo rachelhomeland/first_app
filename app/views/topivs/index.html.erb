@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Topivs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @topivs.each do |topiv| %>
+      <tr>
+        <td><%= topiv.title %></td>
+        <td><%= topiv.description %></td>
+        <td><%= link_to 'Show', topiv %></td>
+        <td><%= link_to 'Edit', edit_topiv_path(topiv) %></td>
+        <td><%= link_to 'Destroy', topiv, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Topiv', new_topiv_path %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @topiv.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @topiv.description %>
+</p>
+
+<%= link_to 'Edit', edit_topiv_path(@topiv) %> |
+<%= link_to 'Back', topivs_path %>

@@ -1,0 +1,2 @@
+class Topiv < ApplicationRecord
+end
